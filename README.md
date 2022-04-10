@@ -1,5 +1,9 @@
 # Sonarr role
 
+[![CI](https://github.com/coaxial/ansible-role-sonarr/actions/workflows/ci.yml/badge.svg)](https://github.com/coaxial/ansible-role-sonarr/actions/workflows/ci.yml)
+
+Galaxy: https://galaxy.ansible.com/coaxial/sonarr
+
 ## Variables and their defaults
 
 | variable name       | default value     | description                                                                             |
