@@ -5,3 +5,8 @@
     - name: "Include coaxial.sonarr"
       ansible.builtin.include_role:
         name: "coaxial.sonarr"
+
+    - name: Install curl (for tests)
+      ansible.builtin.package:
+        name: curl
+        state: present

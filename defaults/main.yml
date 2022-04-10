@@ -1,2 +1,8 @@
 ---
-# defaults file for sonarr
+sonarr__config_directory: /var/lib/sonarr
+sonarr__install_directory: /opt
+sonarr__username: sonarr
+sonarr__password: "!" # password disabled
+sonarr__group: media
+sonarr__version: latest
+sonarr__use_nginx: yes
