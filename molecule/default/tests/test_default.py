@@ -6,16 +6,6 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-def test_user(host):
-    u = host.user('sonarr')
-
-    assert u.exists
-    assert 'sonarr' in u.groups
-    assert 'media' in u.groups
-    assert u.password == '!'
-    assert u.shell == '/usr/bin/env nologin'
-
-
 def test_sonarr_service(host):
     s = host.service('sonarr')
 

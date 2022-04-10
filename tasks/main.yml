@@ -10,5 +10,4 @@
 - include_tasks: nginx.yml
   when: sonarr__use_nginx
 - include_tasks: firewall.yml
-- include_tasks: user.yml
 - include_tasks: sonarr.yml
