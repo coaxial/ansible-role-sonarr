@@ -55,10 +55,6 @@
     regexp: "^  <UrlBase>.*</UrlBase>"
     line: "  <UrlBase>/sonarr</UrlBase>"
   when: soco.stat.exists
-  # tag:
-  #   # idempotence will fail in molecule with this task because first run
-  #   # creates the file, second run will edit it
-  #   - molecule-idempotence-notest
 
 - name: Create Sonarr datadir
   ansible.builtin.file:
